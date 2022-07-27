@@ -1,0 +1,222 @@
+/* ---------------------
+    GOOGLE FONTS
+------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* -----------------------
+    CSS CUSTOM PROPERTY
+-------------------------- */
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --gray: #7E8299;
+    --gray-dark: #3F4254;
+    --success: #50CD89;
+    --warning: #FF490F;
+    --danger: #EF305E;
+    --white: #ffffff;
+    --black: #000000;
+    --navyblue: #020E29;
+
+    /* FONT FAMILY */
+
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --third-font: "Lato", sans-serif;
+}
+
+/* ---------------------
+    COMMON STYLES
+------------------------ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--secondary-font);
+}
+
+/* HEADER SECTION */
+.top-header {
+    background-color: #FFF9F4;
+    height: 100%;
+}
+
+/* NAVBAR */
+.nav-bg-color {
+    background-color: #FFF9F4;
+}
+
+.brand-logo {
+    width: 291px;
+}
+
+.custom-nav {
+    justify-content: end;
+}
+
+.custom-navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* SLIDER TITLE */
+.half-top-title {
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
+    color: #FA804C;
+    font-size: 50px;
+}
+
+.half-buttom-title {
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: #363958;
+}
+
+/* SLIDER BUTTON */
+.link-btn {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 138px;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+}
+
+.fa-cart-shopping,
+.fa-arrow-right {
+    margin-left: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.link-btn:hover {
+    width: 138px;
+    transition: all 0.5s ease 0s;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.link-btn:hover .fa-cart-shopping,
+.fa-arrow-right {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease 0s;
+}
+
+/* TOAST */
+/* .toast-border {
+    border-radius: 5px;
+    border-left: 10px solid var(--blue);
+}
+
+.fa-gift {
+    margin-right: 10px;
+} */
+
+
+/* CONTACT SUBMIT BUTTON */
+.submit-btn {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 115px;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+}
+
+.fa-arrow-right {
+    margin-left: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.submit-btn:hover {
+    width: 115px;
+    transition: all 0.5s ease 0s;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.submit-btn:hover .fa-arrow-right {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease 0s;
+}
+
+.about-img {
+    width: 400px;
+    height: 100%;
+}
+
+/* PRODUCT BACKGROUND COLOR */
+.product-bg-color {
+    background-color: #F1F1F1;
+}
+
+.product-card-body {
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.product-card-body:hover {
+    border-radius: 10px;
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* ALL SECTION TITLE */
+.section-title {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+/* FOOTER SECTION */
+.footer-bg-color {
+    background-color: #363958;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a i {
+    color: #fff;
+}
+
+.social-icons a i:hover {
+    color: orange;
+}
+
+
+/* MOBILE DEVICE RESPONSIVE WITH MEDIA QUERY */
+@media only screen and (max-width: 576px) {
+    .mobile-device {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cutome-size {
+        margin-bottom: 30px;
+    }
+}
